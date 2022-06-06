@@ -89,11 +89,11 @@ fdescribe('CvComponent', () => {
     expect(embauche).toBeTruthy();
   })
 
-  fit("shoul'd set personnes on init",()=>{
+  it("shoul'd set personnes on init",()=>{
     expect(component.personnes).toEqual(fakePersonnes);
     expect(fakeCvService.getPersonnes).toHaveBeenCalled();
   })
-  fit("shoul'd set fake personnes on init when error",()=>{
+  it("shoul'd set fake personnes on init when error",()=>{
    // spyOn(fakeCvService,'getPersonnes').and.throwError;
     
     //expect(component.personnes).toEqual(fakePersonnes);
